@@ -1,4 +1,5 @@
 # Pygame sprite Example
+# Image is from https://opengameart.org/
 import pygame
 import random
 import os
