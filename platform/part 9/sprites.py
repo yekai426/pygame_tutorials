@@ -19,6 +19,7 @@ class Player(pg.sprite.Sprite):
     def __init__(self, game):
         pg.sprite.Sprite.__init__(self)
         self.game = game
+        # image parameters are from spritesheet_jumper.xml
         self.image = self.game.spritesheet.get_image(614, 1063, 120, 191)
         self.image.set_colorkey(BLACK)
         self.rect = self.image.get_rect()
