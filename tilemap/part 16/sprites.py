@@ -185,6 +185,7 @@ class MuzzleFlash(pg.sprite.Sprite):
         self.pos = pos
         self.rect.center = pos
         self.spawn_time = pg.time.get_ticks()
+        self.hit_rect = self.rect
 
     def update(self):
         if pg.time.get_ticks() - self.spawn_time > FLASH_DURATION:
@@ -201,3 +202,4 @@ class Item(pg.sprite.Sprite):
         self.type = type
         self.rect.center = pos
         self.pos = pos
+        self.hit_rect = self.rect
